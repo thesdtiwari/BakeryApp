@@ -27,5 +27,8 @@ Site is completely responsive , checked on mobile and laptop and runs on all bro
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+## Hosted
+App is hosted on `https://bakery-app-ui.netlify.app/`
+
 The page will reload when you make changes.
 You may also see any lint errors in the console.
