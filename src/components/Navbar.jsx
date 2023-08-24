@@ -13,6 +13,9 @@ function Navbar() {
           <div className="nav-links">
             <Link to="/cart">Go to Cart</Link>
           </div>
+          <div className="nav-links">
+            <Link to="/orderstatus">Order Status</Link>
+          </div>
         </div>
       </div>
     </nav>

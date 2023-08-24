@@ -186,3 +186,12 @@
   font-size: xx-large;
   font-weight: 800;
 }
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 1000;
+  font-size: x-large;
+  height: 100vh;
+}

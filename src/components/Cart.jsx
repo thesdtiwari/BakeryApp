@@ -1,7 +1,15 @@
+import { useCallback } from "react";
 import CheckoutCard from "./CheckoutCard";
+import { useNavigate } from "react-router";
 
-const Cart = ({products , productCount }) => {
+const Cart = ({products , productCount ,setAllCountToZero}) => {
+	const navigation = useNavigate();
 	let noProduct = true;
+	const onClick = useCallback(() => {
+		setAllCountToZero();
+		navigation('/payment');
+	},[setAllCountToZero,navigation]);
+
 	return (
 		<div className="cart-page">
 			<div className="cart-items">
@@ -12,7 +20,7 @@ const Cart = ({products , productCount }) => {
 			</div>
 			{noProduct ? <p className="no-selected">No Items Selected</p> : (
 				<div className="checkout-div">
-					<button className="checkout-button" >
+					<button className="checkout-button" onClick={onClick}>
 						Make Payment
 					</button>
 				</div>
